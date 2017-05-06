@@ -1,0 +1,44 @@
+Client ID
+bde94bcf881f43e085f7dd7aea0d922e
+Client Secret
+7a3573dd17834418975a59950cf77d1e
+
+
+// GENERAZIONE FINGERPRINT DEBUG --------------------------------------------------------------------------------
+C:\temp\aaaa>c:\java\jdk1.6.0_45\bin\keytool.exe -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore -list -v
+Immettere la password del keystore:
+Nome alias: androiddebugkey
+Data di creazione: 29-dic-2016
+Tipo di voce: PrivateKeyEntry
+Lunghezza catena certificati: 1
+Certificato[1]:
+Proprietario: C=US, O=Android, CN=Android Debug
+AutoritÓ emittente: C=US, O=Android, CN=Android Debug
+Numero di serie: 1
+Valido da: Thu Dec 29 13:29:52 CET 2016 a: Sat Dec 22 13:29:52 CET 2046
+Impronte digitali certificato:
+         MD5:  F0:A6:23:1E:04:8B:60:CC:21:56:EC:97:75:FE:C5:27
+         SHA1: 3C:65:9E:23:A2:55:7F:87:6B:E8:73:21:08:CA:57:23:F5:EE:EF:1C
+         Nome algoritmo firma: SHA1withRSA
+         Versione: 1
+
+// GENERAZIONE FINGERPRINT RELEASE --------------------------------------------------------------------------------
+c:\java\jdk1.6.0_45\bin\keytool -exportcert -alias androidrelease -keystore prova.keystore -list -v
+Immettere la password del keystore:
+Nome alias: androidrelease
+Data di creazione: 29-dic-2016
+Tipo di voce: PrivateKeyEntry
+Lunghezza catena certificati: 1
+Certificato[1]:
+Proprietario: CN=Paolo Andrenacci, OU=local, O=local, C=IT
+AutoritÓ emittente: CN=Paolo Andrenacci, OU=local, O=local, C=IT
+Numero di serie: 58653ebb
+Valido da: Thu Dec 29 17:50:03 CET 2016 a: Wed Mar 29 18:50:03 CEST 2017
+Impronte digitali certificato:
+         MD5:  52:69:34:C7:2D:E7:27:80:12:AD:38:BC:33:61:AD:E8
+         SHA1: 7B:B8:1F:EA:A8:28:49:49:74:99:5F:91:3D:F0:91:1E:C3:3A:1D:F8
+         Nome algoritmo firma: SHA1withDSA
+         Versione: 3
+
+C:\temp\aaaa>
+
